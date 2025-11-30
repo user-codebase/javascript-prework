@@ -30,3 +30,28 @@ if(playerInput == '1'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+
+if(computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+}else if(playerMove == 'kamień' && computerMove == 'papier'){
+    printMessage('Komputer wygrywa!');
+}else if(computerMove == 'kamień' && playerMove == 'nożyce'){
+    printMessage('Komputer wygrywa!');
+}else if(playerMove == 'kamień' && computerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');
+}else if(computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');
+}else if(playerMove == 'papier' && computerMove == 'nożyce'){
+    printMessage('Komputer wygrywa!');
+}else if(playerMove == 'papier' && computerMove == 'papier'){
+    printMessage('Remis!');
+}else if(playerMove == 'kamień' && computerMove == 'kamień'){
+    printMessage('Remis!');
+}else if(playerMove == 'nożyce' && computerMove == 'nożyce'){
+    printMessage('Remis!');
+}else if(playerMove == 'nieznany ruch'){
+    printMessage('Użytkownik nie podał odpowiedniej liczby, więc nie można określić ruchu. Nie ma możliwości określć kto wygrał rozgrywkę.');
+}else{
+    printMessage('Brak odpowiednich danych, aby określić kto wygrał rozgrywkę.');
+}
